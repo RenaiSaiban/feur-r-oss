@@ -5,8 +5,8 @@ function compile()
 
 source ~/.bashrc && source ~/.profile
 export ARCH=arm64
-export KBUILD_BUILD_HOST="gitpodkesayanganku"
-export KBUILD_BUILD_USER="fjrXTR"
+export KBUILD_BUILD_HOST="serverkentunk"
+export KBUILD_BUILD_USER="zalhera"
 git clone --depth=1 https://github.com/kdrag0n/proton-clang clang
 git clone --depth=1 https://github.com/sarthakroy2002/prebuilts_gcc_linux-x86_aarch64_aarch64-linaro-7 los-4.9-64
 git clone --depth=1 https://github.com/sarthakroy2002/linaro_arm-linux-gnueabihf-7.5 los-4.9-32
@@ -34,8 +34,8 @@ function zupload()
 git clone --depth=1 https://github.com/fjrXTR/AnyKernel3.git -b mt6781 AnyKernel
 cp out/arch/arm64/boot/Image.gz AnyKernel
 cd AnyKernel
-zip -r9 fjrXTR-kernel-v1-fleur.zip *
-curl -T fjrXTR-kernel-v1-fleur.zip temp.sh
+zip -r9 zalhera-kernel-v1-fleur.zip *
+curl -T zalhera-kernel-v1-fleur.zip temp.sh
 }
 
 compile
